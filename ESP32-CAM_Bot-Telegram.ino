@@ -2,18 +2,15 @@
 #include <WiFiClientSecure.h>
 #include "esp_camera.h"
 
-// ==========================================
+
 // 1. CONFIGURAÇÕES DE REDE E TELEGRAM
-// ==========================================
 const char* ssid = "*******";
 const char* password = "*******";
 
 String botToken = "*******"; // Ex: "123456789:ABCdefGhIJKlmNoPQRsTUVWxyz"
 String chatId = "*******";        // Ex: "1234567890"
 
-// ==========================================
 // 2. CONFIGURAÇÕES DO TEMPORIZADOR
-// ==========================================
 unsigned long lastTime = 0;
 // 30000 milissegundos = 30 segundos
 unsigned long timerDelay = 30000; // 30 segundos
@@ -23,9 +20,7 @@ bool useFlash = true;
 
 #define FLASH_LED_PIN 4 // O LED principal do ESP32-CAM fica no pino 4
 
-// ==========================================
 // 3. PINOS DA CÂMERA (Modelo AI-THINKER)
-// ==========================================
 #define PWDN_GPIO_NUM     32
 #define RESET_GPIO_NUM    -1
 #define XCLK_GPIO_NUM      0
