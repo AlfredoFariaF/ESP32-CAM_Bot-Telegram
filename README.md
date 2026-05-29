@@ -1,4 +1,4 @@
-# 📷 ESP32-CAM — Automatic Photo Sender to Telegram
+# ESP32-CAM — Automatic Photo Sender to Telegram
 
 Firmware for the **ESP32-CAM (AI-Thinker)** module that captures photos at regular intervals and automatically sends them to a **Telegram** chat or group via bot.
 
